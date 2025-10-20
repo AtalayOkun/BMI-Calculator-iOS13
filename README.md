@@ -1,27 +1,43 @@
+# BMI Calculator iOS App
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+A feature-rich iOS app to calculate your Body Mass Index (BMI), track your health, and see personalized advice.
 
-#  BMI Calculator
+## Features
 
-## Our Goal
+- Calculate BMI using **weight and height**
+- Display **BMI value, color-coded advice, ideal weight, and weight difference**
+- Dynamic **ResultViewController** with pan and swipe-down gestures
+- Input via **text fields or sliders**, values are synchronized
+- Recalculate quickly with the Recalculate button
+- Handles invalid or unrealistic input values gracefully
 
-The goal of this tutorial is to learn more about Optionals, solidify your understanding of the MVC design pattern and to introduce the concept of Classes. We’ll compare objects created from classes with instances of Structs that we learnt about earlier. 
+## How to Use
 
-## What you will create
+1. Open the app
+2. Enter your height (cm or m) and weight (kg) using text fields or sliders
+3. Tap "Calculate"
+4. View:
+   - Your **BMI**
+   - **Advice** based on BMI range
+   - **Ideal weight** and **weight difference**
+   - **Color-coded background** for quick visual feedback
+5. Swipe down or pan the result screen to dismiss
+6. Tap "Recalculate" to try different values
 
-By the end of the module, you will have made a Body Mass Index calculator. Based on the user’s weight and height it will calculate their body mass and give a piece of health advice depending on whether if they have eaten too many pies or if they need to eat more pies. 
+## BMI Categories
 
-## What you will learn
+- BMI < 18.5 → "Biraz daha yemelisin!" (blue)
+- BMI 18.5–24.9 → "Oldukça fitsin" (green)
+- BMI ≥ 25 → "Az ye!" (red)
 
-* How to create multi-screen apps with animated navigation.
-* Optional binding, optional chaining and the nil coalescing operator.
-* How to create classes and difference between classes and structs. 
-* Pass by value vs. pass by reference. 
-* Formatting Strings. 
-* Color literals.
+## Technologies Used
 
+- Swift
+- UIKit
+- iOS 13+
 
+## Notes
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
+- Ideal BMI is assumed to be 22.0
+- Designed for personal health tracking
+- Easy to extend with additional features like history, charts, or notifications
